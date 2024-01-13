@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NumberDice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunset5" translatesAutoresizingMaskIntoConstraints="NO" id="lJy-Ph-ejj">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jk2-lJ-Gbv">
+                                <rect key="frame" x="20" y="233" width="353" height="100"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="02c-4Z-cpq">
+                                        <rect key="frame" x="0.0" y="0.0" width="171.66666666666666" height="100"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="cHa-1m-wn0">
+                                        <rect key="frame" x="181.66666666666663" y="0.0" width="171.33333333333337" height="100"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cr8-S9-89K">
+                                <rect key="frame" x="150" y="515" width="96" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Play">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.55798965690000002" green="0.16166710849999999" blue="0.14506730440000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="40"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="playButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0wx-DF-ZQT"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cartoon" translatesAutoresizingMaskIntoConstraints="NO" id="sJX-jb-iBX">
+                                <rect key="frame" x="96.666666666666686" y="73" width="200" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="NS0-yq-gmd"/>
+                                    <constraint firstAttribute="height" constant="140" id="j3c-fQ-8tF"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lJy-Ph-ejj" secondAttribute="bottom" id="2N8-8C-ubS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jk2-lJ-Gbv" secondAttribute="trailing" constant="20" id="30I-v8-PzE"/>
+                            <constraint firstItem="sJX-jb-iBX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="14" id="DdM-Qj-5xU"/>
+                            <constraint firstItem="lJy-Ph-ejj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GQw-de-UV7"/>
+                            <constraint firstItem="lJy-Ph-ejj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="JUy-St-CvD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lJy-Ph-ejj" secondAttribute="trailing" id="WiJ-OD-mZd"/>
+                            <constraint firstItem="jk2-lJ-Gbv" firstAttribute="top" secondItem="sJX-jb-iBX" secondAttribute="bottom" constant="20" id="bLL-aO-fYR"/>
+                            <constraint firstItem="jk2-lJ-Gbv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="c6r-XP-oce"/>
+                            <constraint firstItem="sJX-jb-iBX" firstAttribute="centerX" secondItem="jk2-lJ-Gbv" secondAttribute="centerX" id="ycu-UZ-IW3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstImage" destination="02c-4Z-cpq" id="lSJ-Hi-YhX"/>
+                        <outlet property="logoCartoon" destination="sJX-jb-iBX" id="PCV-TJ-5s0"/>
+                        <outlet property="secondImage" destination="cHa-1m-wn0" id="wfq-74-BEH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="17.557251908396946" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="100" height="100"/>
+        <image name="cartoon" width="165" height="114"/>
+        <image name="sunset5" width="200" height="200"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
